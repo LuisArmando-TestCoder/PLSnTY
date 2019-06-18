@@ -55,6 +55,28 @@ html {
   font-family: "Josefin Sans", sans-serif;
 }
 
+canvas {
+  display: block;
+  position: fixed;
+  bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7741e6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7741e6ee;
+}
+
 #artist {
   background-image: url("../img/shellz-art-space-art-sig.jpg");
   background-size: cover;
@@ -138,7 +160,7 @@ html {
 }
 
 #place {
-  background-image: url("../img/tim-barton-rose-nebula-1600.jpg");
+  background-image: url("../img/maciej-drabik-prez3de.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -159,7 +181,7 @@ html {
   font-size: 5vw;
   font-family: serif;
   display: block;
-  color: #dc9c4c;
+  color: #e93536;
 }
 
 #date {
