@@ -1,0 +1,10 @@
+.content {
+    // @include distribution;
+    & > section {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 13%;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+}

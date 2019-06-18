@@ -1,0 +1,15 @@
+#date {
+    @include img('../img/thomas-scholes-m18-003.jpg');
+    color: #fff;
+    h2 {
+        font-size: 10vw;
+    }
+    strong {
+        display: inline-block;
+        color: #ff0;
+    }
+    .wrap {
+        display: grid;
+        place-content: center;
+    }
+}

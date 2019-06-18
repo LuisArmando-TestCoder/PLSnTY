@@ -1,0 +1,23 @@
+#tour {
+    @include img('../img/alena-aenami-endless-1k.jpg');
+    color: #fff;
+
+    .wrap {
+        display: grid;
+        place-content: center;
+    }
+
+    h2 {
+        font-size: 20vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    h2, h3 {
+        width: 100%;
+        padding: 2.5vw;
+        align-items: center;
+    }
+}

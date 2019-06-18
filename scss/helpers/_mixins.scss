@@ -1,0 +1,12 @@
+@mixin distribution {
+    display: grid;
+    grid-template-columns: repeat(8, 100vw); // cuz there are two sections by now
+}
+
+@mixin img($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

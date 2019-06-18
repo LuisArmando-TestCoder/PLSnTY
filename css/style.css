@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u,
+i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#artist {
+  background-image: url("../img/shellz-art-space-art-sig.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#artist .wrap {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+#artist .wrap h1 {
+  color: #fff;
+  font-size: 15vw;
+  padding: 5vw;
+}
+#artist .wrap a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+#artist .wrap a:before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#artist .wrap a:hover:before {
+  width: 100%;
+}
+
+#tour {
+  background-image: url("../img/alena-aenami-endless-1k.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+#tour .wrap {
+  display: grid;
+  place-content: center;
+}
+#tour h2 {
+  font-size: 20vw;
+}
+#tour h3 {
+  font-size: 5vw;
+}
+#tour h2, #tour h3 {
+  width: 100%;
+  padding: 2.5vw;
+  align-items: center;
+}
+
+#place {
+  background-image: url("../img/tim-barton-rose-nebula-1600.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#date {
+  background-image: url("../img/thomas-scholes-m18-003.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+#date h2 {
+  font-size: 10vw;
+}
+#date strong {
+  display: inline-block;
+  color: #ff0;
+}
+#date .wrap {
+  display: grid;
+  place-content: center;
+}
+
+#production {
+  background-image: url("../img/jeff-hong-creeper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#production .wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+#production a {
+  display: inline-block;
+}
+#production strong {
+  font-size: 5vw;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.CTA {
+  position: fixed;
+  z-index: 1;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  text-transform: uppercase;
+  background: linear-gradient(left, #ee0979, #ff6a00);
+  background: -webkit-linear-gradient(left, #ee0979, #ff6a00);
+  background-size: 300px;
+  background-position: center;
+  letter-spacing: 0.25vw;
+}
+
+.CTA:hover {
+  width: 400px;
+  cursor: pointer;
+  background-size: 600px;
+}
+
+.disclaimer {
+  position: fixed;
+  z-index: 1;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 8px;
+  color: #fff;
+  mix-blend-mode: difference;
+  letter-spacing: 2px;
+}
+
+.content > section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 13%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrap {
+  min-height: 100vh;
+}
+.wrap h1, .wrap h2 {
+  font-family: serif;
+}
+
+.css-particles {
+  display: block;
+  height: 100%;
+  background: #fff;
+  mix-blend-mode: screen;
+  display: grid;
+  place-content: center;
+  filter: blur(15px) contrast(30);
+  -webkit-filter: blur(15px) contrast(30);
+}
+
+.css-particles__particle {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #000;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  width: 125px;
+  height: 15px;
+  padding: 10px 15px;
+  text-align: right;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  margin-left: auto;
+  background: #0000;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+nav a:before {
+  content: "";
+  width: 0px;
+  height: 15px;
+  background: #fff0;
+  display: block;
+  position: absolute;
+  left: 0;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  top: 20px;
+  bottom: 0;
+  margin: auto;
+  animation: jump 1s infinite;
+  -webkit-animation: jump 1s infinite;
+}
+@keyframes jump {
+  50% {
+    top: -15px;
+    height: 20px;
+  }
+}
+nav a:hover {
+  width: 155px;
+  background: #fff;
+  color: #000;
+}
+nav a:hover:before {
+  width: 5px;
+  background: #fff;
+  left: -5px;
+}
+
+/*# sourceMappingURL=style.css.map */

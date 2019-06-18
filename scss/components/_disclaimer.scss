@@ -1,0 +1,15 @@
+.disclaimer {
+    position: fixed;
+    z-index: 1;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    color: #fff;
+    mix-blend-mode: difference;
+    letter-spacing: 2px
+}
