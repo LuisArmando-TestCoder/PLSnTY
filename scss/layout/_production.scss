@@ -1,5 +1,9 @@
 #production {
     @include img('../img/jeff-hong-creeper.jpg');
+    padding-bottom: 10vh;
+    ul {
+        padding: 25px;
+    }
     .wrap {
         display: flex;
         justify-content: space-evenly;

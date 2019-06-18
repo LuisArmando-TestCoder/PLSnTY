@@ -2,10 +2,28 @@
     @include img('../img/shellz-art-space-art-sig.jpg');
 
     .wrap {
+
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 640px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         h1 {
+            @media (min-width: 640px) {
+                grid-row: unset;
+            }
             color: #fff;
             font-size: 15vw;
             padding: 5vw;
+            grid-row: 1;
+        }
+
+        ul {
+            margin: auto 0;
+            padding-left: 25px;
         }
 
         a {
@@ -37,9 +55,5 @@
                 }
             }
         }
-
-        display: grid;
-        place-items: center;
-        grid-template-columns: repeat(2, 1fr);
     }
 }

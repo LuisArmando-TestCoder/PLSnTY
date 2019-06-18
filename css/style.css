@@ -64,13 +64,28 @@ html {
 }
 #artist .wrap {
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  #artist .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 #artist .wrap h1 {
   color: #fff;
   font-size: 15vw;
   padding: 5vw;
+  grid-row: 1;
+}
+@media (min-width: 640px) {
+  #artist .wrap h1 {
+    grid-row: unset;
+  }
+}
+#artist .wrap ul {
+  margin: auto 0;
+  padding-left: 25px;
 }
 #artist .wrap a {
   text-decoration: none;
@@ -173,6 +188,10 @@ html {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  padding-bottom: 10vh;
+}
+#production ul {
+  padding: 25px;
 }
 #production .wrap {
   display: flex;
@@ -231,6 +250,7 @@ html {
 }
 
 .disclaimer {
+  box-sizing: border-box;
   position: fixed;
   z-index: 1;
   bottom: 25px;
@@ -244,6 +264,13 @@ html {
   color: #fff;
   mix-blend-mode: difference;
   letter-spacing: 2px;
+  line-height: 2;
+  padding: 25px;
+}
+@media (min-width: 640px) {
+  .disclaimer {
+    padding: 0px;
+  }
 }
 
 .content > section {
@@ -292,6 +319,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  mix-blend-mode: screen;
 }
 nav a {
   text-decoration: none;
