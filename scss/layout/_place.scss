@@ -1,3 +1,21 @@
 #place {
     @include img('../img/tim-barton-rose-nebula-1600.jpg');
+
+    .wrap {
+        display: grid;
+        color: #fff;
+        place-content: center;
+        span {
+            display: inline-block;
+        }
+        h2 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        strong {
+            font-size: 5vw;
+            font-family: serif;
+            display: block;
+            color: #dc9c4c;
+        }
+    }
 }
