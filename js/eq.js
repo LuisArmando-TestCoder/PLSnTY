@@ -8,9 +8,11 @@
     size(window.innerWidth, 200);
     fillArray(10, balls, i => {
         const size = 2;
+        const y = c.height / 2 - size / 2;
         return {
             x: c.width / 10 * i + size * 1.5,
-            y: c.height / 2 - size / 2,
+            y,
+            oY: y,
             r: size,
             size,
             c: '#fff'
@@ -22,6 +24,7 @@
         renderGroup('arc', balls);
         updateGroup(balls, o => {
             o.x += 0.5;
+            o.y = o.oY + Math.sin(o.x / 10) * 10; 
             o.r = o.size + aver;
             if(o.x > c.width) o.x = -o.r;
         });

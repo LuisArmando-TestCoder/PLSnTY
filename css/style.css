@@ -210,10 +210,10 @@ canvas {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding-bottom: 10vh;
 }
 #production ul {
   padding: 25px;
+  z-index: 4;
 }
 #production .wrap {
   display: flex;
@@ -275,14 +275,14 @@ canvas {
   box-sizing: border-box;
   position: fixed;
   z-index: 1;
-  bottom: 25px;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 8px;
+  font-size: 5px;
   color: #fff;
   mix-blend-mode: difference;
   letter-spacing: 2px;
@@ -292,6 +292,8 @@ canvas {
 @media (min-width: 640px) {
   .disclaimer {
     padding: 0px;
+    font-size: 8px;
+    bottom: 25px;
   }
 }
 
